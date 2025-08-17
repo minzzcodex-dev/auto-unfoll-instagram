@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="auto-unfoll.png" alt="Thumbnail" width="100%"/>
+  <img src="thumb_git1.png" alt="Thumbnail" width="100%"/>
 </p>
