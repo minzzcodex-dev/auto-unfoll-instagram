@@ -1,0 +1,67 @@
+========================================================================================
+CREATED BY MINZZCODEX_DEV
+========================================================================================
+FIND ME:
+t.me/@lord_minzzcodex
+tiktok.com/@lord_minzzcodex
+========================================================================================
+
+1. Persiapan Awal
+Install Python
+# Windows → Download Python (https://www.python.org/downloads/windows/)
+# macOS → Sudah ada bawaan
+# Linux/VPS (Ubuntu/Debian):
+sudo apt update && sudo apt install python3 python3-pip -y
+cek dengan:
+python3 --version
+
+2. Install Google Chrome
+Pastikan sudah terinstall Google Chrome: 
+# Windows: https://www.google.com/chrome/
+# macOS: via DMG installer
+# Linux (Debian/Ubuntu):
+sudo apt install -y google-chrome-stable
+
+3. Install ChromeDriver
+Cek versi Google Chrome:
+# Windows: Buka Chrome → chrome://settings/help
+# macOS/Linux: google-chrome --version
+Download ChromeDriver sesuai versi di:
+👉 https://googlechromelabs.github.io/chrome-for-testing/
+Ekstrak file chromedriver:
+# Windows → letakkan di folder project dan rename jadi chromedriver.exe
+# macOS/Linux:
+sudo mv ~/Downloads/chromedriver /usr/local/bin/chromedriver
+sudo chmod +x /usr/local/bin/chromedriver
+
+4. Setup Project Python
+Buat Virtual Environment
+python3 -m venv venv
+# macOS/Linux
+source venv/bin/activate 
+# Windows
+venv\Scripts\activate      
+Install Selenium
+pip install selenium
+
+5. Jalankan Script
+# Windows
+venv\Scripts\activate
+python unfollow_instagram.py
+
+# macOS / Linux / VPS
+source venv/bin/activate
+python3 unfollow_instagram.py
+
+#Cara Kerja#
+~Script membuka Instagram di Chrome.
+~Login manual → masuk username + password.
+~Tekan ENTER di terminal setelah berhasil login.
+~Script membuka halaman daftar Following.
+~Script mulai klik tombol Following → Unfollow satu per satu.
+~Ada jeda otomatis antar klik supaya aman dari limit.
+
+==Catatan Penting==
++Jangan terlalu cepat unfollow → bisa kena rate-limit Instagram.
++Rekomendasi aman: 50–100 unfollow per sesi dengan delay.
++Bisa digunakan di Windows, macOS, Linux VPS.
